@@ -17,4 +17,4 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-install opcache \
     && docker-php-ext-enable pthreads
 
-CMD ["php"]
+RUN php --version
